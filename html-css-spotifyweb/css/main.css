@@ -11,6 +11,10 @@
 .body {
   display: flex;
 }
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*Header*/
 
@@ -29,6 +33,14 @@
 .logo {
   color: white;
   background-color: black;
+}
+
+/*Aside*/
+aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 20%;
 }
 
 /*Main*/
@@ -51,10 +63,7 @@
   padding: 6px;
 }
 /*Sections*/
-.section1 {
-  display: flex;
-  padding: 1%;
-}
+
 .card {
   background-color: blueviolet;
   margin: 2px;
