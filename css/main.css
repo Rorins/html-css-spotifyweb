@@ -4,24 +4,29 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+}
+
 /*Utilities*/
 .border {
   border: 1px black solid;
 }
-.body {
-  display: flex;
-}
-.wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
 
+/*General layout settings*/
+
+aside {
+  width: 15%;
+}
+.content-container {
+  width: 85%;
+}
 /*Header*/
 
 .header-container {
   display: flex;
   background-color: rgb(201, 172, 135);
-  justify-content: space-between;
+  justify-content: right;
   padding: 1%;
 }
 .button {
@@ -29,18 +34,6 @@
   background-color: black;
   padding: 8px 50px;
   border-radius: 30%;
-}
-.logo {
-  color: white;
-  background-color: black;
-}
-
-/*Aside*/
-aside {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 20%;
 }
 
 /*Main*/
@@ -63,7 +56,12 @@ aside {
   padding: 6px;
 }
 /*Sections*/
+/*Aside*/
 
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
 .card {
   background-color: blueviolet;
   margin: 2px;
