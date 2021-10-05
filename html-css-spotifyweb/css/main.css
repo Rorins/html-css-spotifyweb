@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Utilities*/
+.border {
+  border: 1px black solid;
+}
+.body {
+  display: flex;
+}
+
+/*Header*/
+
+.header-container {
+  display: flex;
+  background-color: rgb(201, 172, 135);
+  justify-content: space-between;
+  padding: 1%;
+}
+.button {
+  color: white;
+  background-color: black;
+  padding: 8px 50px;
+  border-radius: 30%;
+}
+.logo {
+  color: white;
+  background-color: black;
+}
+
+/*Main*/
+
+.gallery-container {
+  flex-grow: 1;
+  background-color: rgba(53, 51, 51, 0.651);
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 1%;
+}
+
+.nav-list > li {
+  padding: 6px;
+}
