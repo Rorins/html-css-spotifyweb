@@ -35,16 +35,34 @@
 
 .gallery-container {
   flex-grow: 1;
-  background-color: rgba(53, 51, 51, 0.651);
+  background-color: rgba(117, 70, 70, 0.651);
 }
 
+/*Nav bar*/
 .nav-list {
   display: flex;
   list-style-type: none;
   justify-content: center;
   padding: 1%;
+  color: #73767a;
 }
 
 .nav-list > li {
   padding: 6px;
+}
+/*Sections*/
+.section1 {
+  display: flex;
+  padding: 1%;
+}
+.card {
+  background-color: blueviolet;
+  margin: 2px;
+  width: 20%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
