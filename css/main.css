@@ -13,8 +13,19 @@ body {
 }
 
 /*Utilities*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .padding {
   padding: 2%;
+}
+
+/*Top*/
+.top {
+  height: calc (100% - 100px);
+  display: flex;
 }
 /*Aside*/
 
@@ -22,6 +33,7 @@ aside {
   width: 230px;
   background-color: black;
   padding: 1%;
+  flex-shrink: 0;
 }
 
 aside > img {
@@ -42,6 +54,8 @@ aside h4 {
   color: white;
 }
 
+/*Right-container*/
+
 /*Header*/
 
 .header-container {
@@ -58,11 +72,11 @@ aside h4 {
   font-weight: bold;
 }
 
-/*Main*/
+/*Main gallery*/
 
 .gallery-container {
-  flex-grow: 1;
   background-color: #141922;
+  overflow: hidden;
 }
 
 /*Nav bar*/
@@ -78,16 +92,12 @@ aside h4 {
   padding: 6px;
   font-weight: bold;
 }
-/*Sections*/
+/*Section*/
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-}
 .card {
   background-color: blueviolet;
   margin: 2px;
-  width: calc(100% / 6);
+  width: calc(100% / 6 - 4px);
   height: 300px;
 }
 
@@ -97,10 +107,13 @@ section {
   object-fit: cover;
 }
 
-.top {
-  height: calc (100% - 100px);
-  display: flex;
-  overflow: auto;
+.albums {
+  flex-grow: 1;
+  /*display: flex;*/
+  max-height: 100vh;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  padding: 10px;
 }
 
 /*bottom*/
@@ -110,6 +123,7 @@ section {
   padding: 1%;
   display: flex;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .bottom ul {
