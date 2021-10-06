@@ -18,7 +18,7 @@
     <!--Top-part-->
     <div class="top">
       <!--Aside-->
-      <aside>
+      <aside class="aside-top">
         <img src="./img/logo.svg" alt="Spotify" />
         <!--Aside navigation-->
         <ul>
@@ -30,15 +30,23 @@
         <!--Aside playlist-->
         <h4>PLAYLIST</h4>
         <ul>
-          <li>
-            <img src="./img/profile.svg" alt="" srcset="" /> Crea Playlist
-          </li>
+          <li><i class="fas fa-plus-square"></i> Crea Playlist</li>
+          <li>Nome Playlist</li>
+          <li>Nome Playlist</li>
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
         </ul>
+
+        <!--Aside bottom-->
+        <div class="aside-bottom">
+          <ul>
+            <li>Install app</li>
+            <li><i class="fas fa-user-circle"></i>John Doe</li>
+          </ul>
+        </div>
       </aside>
 
       <!--Content Container-->
@@ -166,8 +174,9 @@
       <!--Left-items-->
       <div class="left-items">
         <ul>
-          <li><img src="./img/sinister.jpeg" alt="" /></li>
-          <li>Sinister Brano nome</li>
+          <img src="./img/sinister.jpeg" alt="" />
+          <li>Sinister</li>
+          <li>Brano nome</li>
           <li>
             <i class="fa-regular fa-heart"></i>
           </li>
@@ -179,9 +188,14 @@
 
       <!--Middle items-->
       <div class="middle-items">
-        <div class="player-bar">
-          <div></div>
-        </div>
+        <ul>
+          <li><i class="fas fa-random"></i></li>
+          <li><i class="fas fa-step-backward"></i></li>
+          <li><i class="far fa-play-circle"></i></li>
+          <li><i class="fas fa-step-forward"></i></li>
+          <li><i class="fas fa-redo"></i></li>
+        </ul>
+        <div class="player-bar"></div>
       </div>
 
       <!--Right items-->
@@ -191,6 +205,7 @@
           <li><i class="fa-solid fa-desktop"></i></li>
           <li><i class="fa-solid fa-volume-high"></i></li>
         </ul>
+        <div class="bar"></div>
       </div>
     </div>
   </body>

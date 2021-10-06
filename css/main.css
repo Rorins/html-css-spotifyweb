@@ -29,31 +29,47 @@ body {
 }
 /*Aside*/
 
-aside {
+.aside-top {
   width: 230px;
   background-color: black;
-  padding: 1%;
   flex-shrink: 0;
+  padding: 2%;
+  position: relative;
 }
 
-aside > img {
+.aside-top > img {
   width: 150px;
 }
-aside > ul {
+.aside-top > ul {
   list-style-type: none;
 }
-aside ul img {
+.aside-top ul img {
   width: 30px;
 }
-aside li {
+.aside-top li {
   color: #707277;
-  padding: 5%;
+  padding: 5% 0;
 }
 
-aside h4 {
+.aside-top h4 {
+  color: white;
+  padding-top: 10%;
+}
+
+.aside-bottom {
+  width: 200px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.aside-bottom ul {
+  list-style: none;
+}
+
+.aside-bottom li:last-child {
   color: white;
 }
-
 /*Right-container*/
 
 /*Header*/
@@ -159,9 +175,24 @@ aside h4 {
 /*middle-items*/
 .middle-items {
   display: flex;
+  padding: 10px;
+}
+
+.middle-items li {
+  padding: 10px;
 }
 
 /*right-items*/
 .right-items {
   display: flex;
+  padding: 10px;
+}
+
+.right-items li {
+  padding: 10px;
+}
+.bar {
+  width: 100px;
+  height: 5px;
+  background-color: #5a5a5a;
 }
