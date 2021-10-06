@@ -92,13 +92,27 @@ aside h4 {
   padding: 6px;
   font-weight: bold;
 }
-/*Section*/
+/*Sections*/
 
 .card {
-  background-color: blueviolet;
-  margin: 2px;
-  width: calc(100% / 6 - 4px);
+  margin: 8px;
+  width: calc(100% / 6 - 20px);
   height: 300px;
+  text-align: center;
+}
+
+.card ul {
+  list-style-type: none;
+}
+
+.card li:first-child {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+.card li:last-child {
+  color: gray;
+  font-weight: 600;
 }
 
 .card img {
@@ -108,8 +122,6 @@ aside h4 {
 }
 
 .albums {
-  flex-grow: 1;
-  /*display: flex;*/
   max-height: 100vh;
   flex-wrap: wrap;
   overflow-y: auto;
