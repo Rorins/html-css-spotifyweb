@@ -98,9 +98,44 @@ section {
 }
 
 .top {
-  flex-grow: 1;
+  height: calc (100% - 100px);
+  display: flex;
+  overflow: auto;
+}
+
+/*bottom*/
+.bottom {
+  height: 100px;
+  background-color: rgba(189, 185, 185, 0.973);
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.bottom li {
+  padding: 1%;
+}
+
+.bottom img {
+  width: 50px;
+}
+
+/*left-items*/
+.left-items {
   display: flex;
 }
-.bottom {
-  height: 10vh;
+
+/*middle-items*/
+.middle-items {
+  display: flex;
+}
+
+/*right-items*/
+.right-items {
+  display: flex;
 }
