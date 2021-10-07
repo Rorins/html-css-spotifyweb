@@ -15,6 +15,7 @@ body {
 /*Utilities*/
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /*Top*/
@@ -252,4 +253,12 @@ body {
   height: 5px;
   background-color: #4c4c4c;
   align-items: center;
+}
+
+/*Media query*/
+@media screen and (max-width: 500px) {
+  .albums section {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
